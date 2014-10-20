@@ -1,14 +1,26 @@
 <div ng-controller="personalInfoCtrl">
 	<h2>
-		Hobbies: {{hobbies}}
+		Hobbies:
 	</h2>
+	<ul ng-repeat="hobby in hobbies">
+		<li>{{hobby}}</li>
+	</ul>
 	<h2>
-		Occupations: {{occupations}}
+		Occupations: 
 	</h2>
+	<ul ng-repeat="occupation in occupations">
+		<li>{{occupation}}</li>
+	</ul>
 	<h2>
-		Mentions: {{mentions}}
+		Mentions:
 	</h2>
+	<ul ng-repeat="mention in mentions">
+		<li>{{mention}}</li>
+	</ul>
 	<h2>
-		References: {{references}}
+		References:
 	</h2>
+	<ul ng-repeat="reference in references">
+		<li>{{reference}}</li>
+	</ul>
 </div>

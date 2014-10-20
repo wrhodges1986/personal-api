@@ -9,4 +9,12 @@ angular.module("myInfo").service("skillsService", function($http, $q) {
 		});
 	};
 
+	this.addNewSkill = function(newSkill) {
+		return $http({
+			method: "POST",
+			url: baseUrl + "/skills",
+			data: newSkill
+		});
+	};
+
 })

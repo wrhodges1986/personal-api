@@ -1,5 +1,13 @@
 <div ng-controller="skillsCtrl">
 	<h2>
-		Skills: {{skills}}
+		Skills: 
 	</h2>
+	<ul ng-repeat="skill in skills">
+		<li>id: {{skill.id}}</li>
+		<li>name: {{skill.name}}</li>
+		<li>experience: {{skill.experience}}</li>
+	</ul>
+	<h3>Add a skill:</h3>
+	<input type="text" ng-model="newSkill"/>
+	<button ng-click="addSkill()">Add Skill</button>
 </div>
